@@ -25,10 +25,10 @@ for path,dirs,files in os.walk('.'):
             directory = os.getcwd()
             name = fullname.split('/')[-3]
             print(name)
-            if not os.path.exists(directory + "/" + "ImageProcessed"):
-            	os.makedirs(directory + "/" + "ImageProcessed")
+            if not os.path.exists(directory + "/" + "ProcessedImage"):
+            	os.makedirs(directory + "/" + "ProcessedImage")
             #name = directory.split('/')[-3]
-            shutil.move(fullname, directory + "/ImageProcessed/" + name + ".png")
+            shutil.move(fullname, directory + "/ProcessedImage/" + name + ".png")
 
 import shutil
 
